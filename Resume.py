@@ -22,7 +22,7 @@ SOCIAL_MEDIA = {
     "GitHub": "https://github.com/Mateus-Schenkel",
 }
 PROJECTS = {
-    "🏆 Dashboard - Comparing sales across three stores": "",
+    "🏆 Dashboard - Sales": "https://bi-sales-dashboard.streamlit.app/",
 }
 
 st.set_page_config(page_title=PAGE_TITLE, page_icon=PAGE_ICON)
@@ -164,8 +164,8 @@ st.write(
 )
 
 # --- Projects & Accomplishments ---
-#st.write('\n')
-#st.subheader("Projects & Accomplishments")
-#st.write("---")
-#for project, link in PROJECTS.items():
-#    st.write(f"[{project}]({link})")
+st.write('\n')
+st.subheader("Projects & Accomplishments")
+st.write("---")
+for project, link in PROJECTS.items():
+    st.write(f"[{project}]({link})")
