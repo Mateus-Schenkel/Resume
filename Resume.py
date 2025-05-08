@@ -14,20 +14,25 @@ PAGE_TITLE = "Digital CV | Mateus Schenkel"
 PAGE_ICON = ":wave:"
 NAME = "Mateus Schenkel"
 DESCRIPTION = """
-Data Analys, assisting enterprises by suporting data-driven decision making
+Data Analyst, assisting enterprises by suporting data-driven decision making
 """
 EMAIL = "mateusschenkel@gmail.com"
 SOCIAL_MEDIA = {
     "LinkedIn": "https://www.linkedin.com/in/mateusschenkel",
     "GitHub": "https://github.com/Mateus-Schenkel",
+    "Portfólio": "https://mateus-schenkel.github.io/Portifolio-EN",
 }
 PROJECTS = {
-    "🏆 Dashboard - Sales": "https://bi-sales-dashboard.streamlit.app/",
+    "🏆 Sales Dashboard - Sales Python": "https://bi-sales-dashboard.streamlit.app/",
+    "🏆 Sales Dashboard - Power BI": "https://bit.ly/dashboarvendasmateus",
+    "🏆 Human Resources Dashboard - Power BI": "https://bit.ly/dashboardturnoverstarium",
+    "🏆 Logistic Dashboard - Power BI": "https://bit.ly/3UvzMrf",
+    "🏆 Faturamento Dashboard - Power BI": "https://bit.ly/3YqZhfy"
 }
 
 st.set_page_config(page_title=PAGE_TITLE, page_icon=PAGE_ICON)
 
-# --- LOAD CSS, PDF & PROFIL PIC ---
+# --- LOAD CSS, PDF & PROFILE PIC ---
 with open(css_file) as f:
     st.markdown("<style>{}</style>".format(f.read()), unsafe_allow_html=True)
 with open(resume_file_EN, "rb") as pdf_file1:
@@ -69,12 +74,14 @@ for index, (platform, link) in enumerate(SOCIAL_MEDIA.items()):
 st.write('#')
 st.subheader("About me")
 st.write(
-    """
-Organized and proactive with 1 year of experience
- working with data analysis and automation processes
- in a logistic environment, and more than 2 years working 
- in financial roles, I'm a result driven kind of person 
- and a fast learner.
+"""
+Organized and proactive data analyst with over 2 years of experience 
+in financial analytics, automation processes, and business intelligence. 
+Skilled in leveraging tools like n8n, SQL Server, 
+and Power BI for data-driven decision-making. 
+Experienced in developing AI-powered automation workflows using OpenAI API and Dokploy, 
+optimizing financial operations, and creating insightful dashboards. 
+A results-oriented professional, always eager to embrace new challenges and technologies.
 """
 )
 
@@ -82,10 +89,12 @@ Organized and proactive with 1 year of experience
 st.write('#')
 st.subheader("Hard Skills")
 st.write(
-    """
-- 👩‍💻 Programming: Python, SQL
-- 📊 Data Visulization: PowerBi, MS Excel, Plotly
-- 🗄️ Databases: MySQL, OracleDB
+"""
+👩‍💻 Programming: Python, SQL.
+🤖 Automation: n8n, Power Automate.
+📊 Data Visualization: Power BI, Plotly, Streamlit.
+🗄️ Databases: SQL Server, PostgreSQL, MySQL, Oracle.
+🔁 Workflow Optimization: Automating business processes with AI and analytics.
 """
 )
 
@@ -93,7 +102,9 @@ st.write(
 st.write('#')
 st.subheader("Certifications")
 st.write(
-    """
+"""
+- ► Financial Management (Graduation Degree) - Feevale
+- ► Database Administration (Pós Graduation Degree) - Metropolitana
 - ► Microsoft Power BI for Business Intelligence and Data Science - Data Science Academy
 - ► Diction and Oratory - Conquer
 - ► Time Management - Conquer
@@ -101,6 +112,8 @@ st.write(
 - ► Managing Team Conflict - PMI
 - ► SAP ERP Essential Training - LinkedIn
 - ► Python - Hashtag Treinamentos
+- ► Git & GitHub - Jornada de Dados
+- ► Web Scrapping - Jornada de Dados
 """
 )
 
@@ -120,22 +133,39 @@ st.subheader("Work History")
 st.write("---")
 
 # --- JOB 1
-st.write("🚧", "**Data Analyst | Multi Armazéns**")
-st.write("Ago'22 - Present")
+st.write("🚧", "**Data Analyst | Nova Capital**")
+st.write("Jan'25 - Present")
 st.write(
     """
-- ► Responsible for collecting and analyzing data from the OracleDB.
-- ► Developed and optimized SQL queries to extract relevant information.
-- ► Automated connections with Power Query Online to create Dataflows in Power BI.
-- ► Contributed to data-driven decision-making through reports and visualizations.
-- ► Led an automation project for clients, encompassing data collection from the database, 
-utilizing data intelligence with M and DAX languages and Power Automate,
-to send inventory information with alerts to clients over email,
-and also share information through MS SharePoint.
+- ► Designed and implemented advanced automation workflows using n8n, Dokploy, 
+and OpenAI API, significantly reducing manual processes and improving operational efficiency.
+- ► Leveraged SQL Server to develop and optimize complex queries for financial data analysis, 
+ensuring accurate and timely insights for decision-making.
+- ► Built interactive dashboards in Power BI to visualize key financial metrics.
+- ► Collaborated with cross-functional teams to deploy AI agents for predictive analytics, 
+streamlining inventory and financial forecasting.
 """
 )
 
 # --- JOB 2
+st.write("🚧", "**Data Analyst | Multi Armazéns**")
+st.write("Ago'22 - Dec'24")
+st.write(
+    """
+- ► Responsible for collecting and analyzing data from the database.
+- ► Developed and optimized SQL queries to extract relevant information.
+- ► Automated connections with Power Query Online to create Dataflows in Power BI.
+- ► Contributed to data-driven decision-making through reports and visualizations.
+- ► Led an automation project for clients, encompassing data collection from the database, 
+    utilizing data intelligence with M and DAX languages and Power Automate,
+    to send inventory information with alerts to clients over email,
+    and also share information through MS SharePoint.
+- ► Automated end-to-end invoice tracking by integrating data pipelines with Power Query Online, M, 
+    and DAX, enabling real-time monitoring and client alerts via email and SharePoint.
+"""
+)
+
+# --- JOB 3
 st.write('#')
 st.write("🚧", "**Financial Business Process Outsourcing | DBK**")
 st.write("Nov'21 - Apr '22")
@@ -150,7 +180,7 @@ st.write(
 """
 )
 
-# --- JOB 3
+# --- JOB 4
 st.write('\n')
 st.write("🚧", "**Financial Assistant | MVL**")
 st.write("Jan'20 - Sept '21")
