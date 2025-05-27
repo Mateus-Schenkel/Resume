@@ -7,7 +7,7 @@ current_dir = Path(__file__).parent if "__file__" in locals() else Path.cwd()
 css_file = current_dir / "styles" / "main.css"
 resume_file_EN = current_dir / "assets" /"resume.pdf"
 resume_file_PT = current_dir / "assets" /"curriculo.pdf"
-profile_pic = current_dir / "assets" / "profile-pic.png"
+profile_pic = current_dir / "assets" / "profile-pic.jpg"
 
 # --- General Settings
 PAGE_TITLE = "Digital Resume | Mateus Schenkel"
