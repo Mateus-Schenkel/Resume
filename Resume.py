@@ -76,10 +76,9 @@ st.write(
 """
 Organized and proactive data analyst with over 2 years of experience 
 in financial analytics, automation processes, and business intelligence. 
-Skilled in leveraging tools like n8n, SQL Server, 
+Skilled in leveraging tools like SQL Server, 
 and Power BI for data-driven decision-making. 
-Experienced in developing AI-powered automation workflows using OpenAI API and Dokploy, 
-optimizing financial operations, and creating insightful dashboards. 
+Experienced in developing AI-powered automation workflows using n8n.
 A results-oriented professional, always eager to embrace new challenges and technologies.
 """
 )
@@ -93,7 +92,6 @@ st.write(
 🤖 Automation: n8n, Power Automate.
 📊 Data Visualization: Power BI, Plotly, Streamlit.
 🗄️ Databases: SQL Server, PostgreSQL, MySQL, Oracle.
-🔁 Workflow Optimization: Automating business processes with AI and analytics.
 """
 )
 
@@ -102,8 +100,6 @@ st.write('#')
 st.subheader("Certifications")
 st.write(
 """
-- ► Financial Management (Graduation Degree) - Feevale
-- ► Database Administration (Pós Graduation Degree) - Metropolitana
 - ► Microsoft Power BI for Business Intelligence and Data Science - Data Science Academy
 - ► Diction and Oratory - Conquer
 - ► Time Management - Conquer
@@ -136,13 +132,12 @@ st.write("🚧", "**Data Analyst | Nova Capital**")
 st.write("Jan'25 - Present")
 st.write(
     """
-- ► Designed and implemented advanced automation workflows using n8n, Dokploy, 
-and OpenAI API, significantly reducing manual processes and improving operational efficiency.
-- ► Leveraged SQL Server to develop and optimize complex queries for financial data analysis, 
-ensuring accurate and timely insights for decision-making.
+- ► Designed and implemented an advanced WhatsApp automation workflow using a DigitalOcean droplet, 
+    deploying applications such as n8n, Redis, and Evolution API via Dokploy, significantly reducing 
+    manual processes and enhancing sales operations efficiency.
+- ► Created a SQL Server Agent Job to automate and optimize complex financial queries, delivering 
+    timely data insights for decision-making.
 - ► Built interactive dashboards in Power BI to visualize key financial metrics.
-- ► Collaborated with cross-functional teams to deploy AI agents for predictive analytics, 
-streamlining inventory and financial forecasting.
 """
 )
 
